@@ -1,0 +1,10 @@
+[mcp_servers.tradingagents]
+command = "D:/1. Workspace/code/TradingAgents/venv/Scripts/python.exe"
+args = [
+    "-m",
+    "tradingagents.mcp",
+]
+
+[mcp_servers.tradingagents.env]
+PYTHONUTF8 = "1"
+PYTHONIOENCODING = "utf-8"

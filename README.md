@@ -103,6 +103,36 @@ Our framework decomposes complex trading tasks into specialized roles.
 
 ## Installation and CLI
 
+### Claude Code MCP plugin (no LLM API key in Python)
+
+TradingAgents can run as a Claude Code plugin. Claude Code keeps the provider
+session and performs the analyst/research/risk reasoning; the local Python MCP
+server supplies market data, validation, memory, reports, and scoring. This
+mode does not read an Anthropic or OpenAI LLM key from the Python process.
+
+Install the package and dependencies from the repository root:
+
+```powershell
+python -m pip install -e .
+```
+
+Start Claude Code with the local plugin:
+
+```powershell
+claude --plugin-dir .\plugins\tradingagents
+```
+
+Then run the namespaced skill:
+
+```text
+/tradingagents:analyze NVDA
+```
+
+Use `/mcp` to approve and verify the local `tradingagents` server. Configure
+only the data-vendor keys you use (for example `FRED_API_KEY` or
+`ALPHA_VANTAGE_API_KEY`). The full integration plan and progress checklist are
+in [`docs/CLAUDE_CODE_MCP_REFACTOR_PLAN.md`](docs/CLAUDE_CODE_MCP_REFACTOR_PLAN.md).
+
 ### Installation
 
 Clone TradingAgents:

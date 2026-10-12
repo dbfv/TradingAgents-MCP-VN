@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(./venv/Scripts/python.exe --version)",
+      "Bash(./venv/Scripts/python.exe -m pip list)",
+      "Bash(\"D:/Programs/Python/python.exe\" --version)",
+      "Bash(\"D:/Programs/Python/python.exe\" -c \"import sys; print\\(sys.executable\\)\")",
+      "Bash(\"D:/Programs/Python/python.exe\" -c \"import mcp, pandas, langgraph; print\\('all present'\\)\")",
+      "Bash(D:/Programs/Python/python.exe -c ' *)",
+      "Bash(git check-ignore *)",
+      "Bash(taskkill //F //PID 12248)",
+      "Bash(mv venv *)",
+      "Bash(where python *)",
+      "Bash(\"D:/Programs/Python/python.exe\" -c \"import json;d=json.load\\(open\\('.mcp.json'\\)\\);s=d['mcpServers']['tradingagents'];print\\('command:',s['command']\\);print\\('args:',s['args']\\)\")",
+      "Bash(timeout 30 python -m tradingagents.mcp)",
+      "Bash(timeout 60 python -m tradingagents.mcp)",
+      "mcp__tradingagents__health",
+      "mcp__tradingagents__get_prior_lessons",
+      "Bash(timeout 75 D:/Programs/Python/python.exe -c ' *)",
+      "Bash(echo \"EXIT=$?\")",
+      "Bash(timeout 150 D:/Programs/Python/python.exe -c ' *)",
+      "Bash(timeout 180 D:/Programs/Python/python.exe -c ' *)",
+      "Bash(grep -viE \"^\\\\s*$|futurewarning|yfinance|http error|delisted|no data|^\\\\[\")",
+      "Bash(grep -viE \"futurewarning|^\\\\s*$|yfinance|http error|no data|^\\\\s*\\\\[\")"
+    ]
+  }
+}

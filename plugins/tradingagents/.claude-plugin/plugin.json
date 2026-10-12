@@ -1,0 +1,8 @@
+{
+  "name": "tradingagents",
+  "description": "TradingAgents research workflow backed by a local MCP server. Claude Code supplies the model/provider; Python supplies market data, validation, memory, reports, and scoring.",
+  "version": "0.1.0",
+  "author": {
+    "name": "TradingAgents"
+  }
+}

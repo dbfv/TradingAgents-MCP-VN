@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "tradingagents": {
+      "type": "stdio",
+      "command": "D:/Programs/Python/python.exe",
+      "args": ["-m", "tradingagents.mcp"],
+      "env": {
+        "PYTHONUTF8": "1",
+        "PYTHONIOENCODING": "utf-8"
+      }
+    }
+  }
+}

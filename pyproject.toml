@@ -15,6 +15,7 @@ dependencies = [
     "langchain-openai>=0.3.23",
     "langgraph>=0.4.8",
     "langgraph-checkpoint-sqlite>=2.0.0",
+    "mcp>=1.9.0,<2",
     "pandas>=2.3.0",
     "python-dotenv>=1.0.0",
     "pytz>=2025.2",
@@ -41,6 +42,7 @@ bedrock = [
 
 [project.scripts]
 tradingagents = "cli.main:app"
+tradingagents-mcp = "tradingagents.mcp.server:main"
 
 [tool.setuptools.packages.find]
 include = ["tradingagents*", "cli*"]
